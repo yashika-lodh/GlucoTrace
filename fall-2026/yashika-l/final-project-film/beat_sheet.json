@@ -1,0 +1,105 @@
+{
+  "_note": "Draft by Yashika Lodh, 2026-10-24. Before rendering, match the field names to the toolkit's example beat sheets (examples/ai-explainer/claude-debunked/beat_sheet.json) and the chosen skill's SKILL.md. Narration is first person, as Yashika. No instructor persona, voice line, or credit.",
+  "metadata": {
+    "title": "Checkable Glucose Insights — Final Project Pitch",
+    "author": "Yashika Lodh",
+    "course": "INFO7375 Fall 2026",
+    "slug": "checkable-glucose-pitch",
+    "builder": "show-tell if present in ./art --list, otherwise ai-explainer",
+    "engine": "kokoro",
+    "voice_kokoro": "af_bella",
+    "voice_note": "Preferred: my own recorded voice. If the pipeline needs Kokoro, use af_bella reading my first-person script, disclosed in README and SOURCES. Do not use the in-for-Bear line or the @NikBearBrown chip.",
+    "visual_style": "One simple drawn picture per beat, minimal on-screen text, narration carries the idea.",
+    "target_runtime": "about 3 minutes (2-4 allowed)"
+  },
+  "beats": [
+    {
+      "id": "B00",
+      "title": "Title",
+      "narration": "Hi, I'm Yashika. This is a pitch for my final project: a glucose app whose AI explanations you can check. Nothing is built yet, so everything you'll see is a plan.",
+      "visual": "Title card. A hand-drawn glucose curve with a small checkmark on it.",
+      "on_screen_text": "Checkable Glucose Insights (working title) — a pitch",
+      "label": null
+    },
+    {
+      "id": "B01",
+      "title": "The problem",
+      "narration": "If you wear a glucose monitor and a fitness tracker, your data lives in separate places. And when an app does explain it, you usually can't see what the explanation is based on.",
+      "visual": "Two phones drawn far apart, one with a glucose line, one with a heart. Between them, a speech bubble with a question mark.",
+      "on_screen_text": null,
+      "label": null
+    },
+    {
+      "id": "B02",
+      "title": "What already exists",
+      "narration": "I looked at Oura with Dexcom's Stelo, which shows glucose next to sleep and activity, and Dexcom's own app, which has AI insights. Both are tied to specific hardware, and from their public pages I couldn't find a published record of how often their AI is wrong.",
+      "visual": "Two closed boxes, each with a small padlock and a device icon inside.",
+      "on_screen_text": "Oura + Stelo · Dexcom app",
+      "label": null
+    },
+    {
+      "id": "B03",
+      "title": "The idea",
+      "narration": "My app will put glucose, meals, heart rate and activity on one timeline. And every sentence the AI writes will link to the exact readings behind it.",
+      "visual": "Sketch of one timeline: a glucose line on top, meal markers, heart-rate band below. A sentence with a thin line pointing to two dots on the curve.",
+      "on_screen_text": "CONSTRUCTED — sketch, not built",
+      "label": "constructed"
+    },
+    {
+      "id": "B04",
+      "title": "The data",
+      "narration": "The demo will use CGMacros, a public research dataset of forty-five adults: healthy, prediabetic, and type two, over about ten days, with their meals logged. It's recorded data, not live, so anyone can check it.",
+      "visual": "A drawn spreadsheet with an arrow into the timeline sketch.",
+      "on_screen_text": "Public dataset: CGMacros (PhysioNet)",
+      "label": null
+    },
+    {
+      "id": "B05",
+      "title": "Code computes, Claude explains",
+      "narration": "Code will compute the numbers first: how far glucose rose after a meal, when it peaked, and how long it took to settle. Claude will only explain those numbers, and it has to cite each one.",
+      "visual": "Three boxes in a row with arrows: Code computes → Claude explains → Code checks.",
+      "on_screen_text": "Code computes → Claude explains → Code checks",
+      "label": null
+    },
+    {
+      "id": "B06",
+      "title": "Verification",
+      "narration": "Then code will check every claim. A wrong number fails. A missing citation fails. Medical or cause-and-effect language, like 'you should', gets blocked. Anything flagged is never shown as fact.",
+      "visual": "Three drawn claim cards: one with a check, one with an X, one with a stop sign.",
+      "on_screen_text": "verified · failed · blocked",
+      "label": null
+    },
+    {
+      "id": "B07",
+      "title": "Who opens it",
+      "narration": "A hiring manager will open the link, pick a participant and a day, and click a meal explanation to see the readings light up. Then they'll open the evaluation page to see how often Claude was right, and real examples of when it wasn't.",
+      "visual": "Sketch of a meal card next to a chart with two highlighted points, and a small tab labelled Evaluation.",
+      "on_screen_text": "CONSTRUCTED — mock-up, not built",
+      "label": "constructed"
+    },
+    {
+      "id": "B08",
+      "title": "What it proves, and why this project",
+      "narration": "It's meant to show I can build AI features that refuse to show unchecked claims, and measure how well they work. React, TypeScript and accessible UI are skills I already have. Verification, evaluation and health data are new for me.",
+      "visual": "Two columns drawn on paper: 'Have' and 'Learning', with a few icons in each.",
+      "on_screen_text": "Have · Learning",
+      "label": null
+    },
+    {
+      "id": "B09",
+      "title": "Out of scope and the risk",
+      "narration": "It won't diagnose, predict glucose, or give medical advice. The biggest risk is that a sentence can have the right numbers and still mislead. So anything outside a small set of checkable claim types will be marked unverified and reviewed by hand.",
+      "visual": "A fence. Outside it: a stethoscope, a crystal ball, a prescription pad, each crossed out.",
+      "on_screen_text": "No diagnosis · No predictions · No medical advice",
+      "label": null
+    },
+    {
+      "id": "B10",
+      "title": "First thing that runs",
+      "narration": "The first thing that will run is one participant, one day, one meal: explained, checked, and written as one row in the evaluation log. That row is how you'll know it ran. Thanks for watching.",
+      "visual": "A single drawn table row with columns claim, result, date, and a checkmark.",
+      "on_screen_text": "CONSTRUCTED — planned log row",
+      "label": "constructed"
+    }
+  ]
+}
