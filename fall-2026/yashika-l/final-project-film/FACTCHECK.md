@@ -1,6 +1,6 @@
 # FACTCHECK — glucotrace-pitch
 
-Status: **OPEN — verdicts to be filled in by Yashika.** DRAFT 2026-10-24.
+Status: **CLOSED** — every claim has a verdict, and Gate F is signed. Final 2026-10-24.
 Fill each Verdict (PASS / FIX / CUT) after checking the named source. If a claim needs a
 narration change, change it in beat_sheet.json and regenerate the audio.
 
@@ -23,7 +23,7 @@ narration change, change it in beat_sheet.json and regenerate the audio.
 | 14 | B04 | Recorded data, not live, so anyone can check it | PhysioNet page, Access section | PASS | Access Policy: anyone can access the files, under the licence. Licence: CC BY-NC-SA 4.0. Checked 2026-10-24 |
 | 15 | B04 / screen | "Public dataset: CGMacros (PhysioNet)" | PhysioNet page | PASS | Same as row 9 |
 | 16 | B05 | Rise after a meal, peak time and time to settle can be computed from the data | PhysioNet page; paper Data Records section | PASS | CGM readings at 1-minute intervals with meal info on the same timestamped rows; paper also reports Fitbit heart rate and METs per minute |
-| 17 | B08 | React, TypeScript and accessible UI are skills you already have | Own GitHub | PASS | React + TypeScript: github.com/yashika-lodh/Waypoint (Next.js, React 19, TypeScript). Accessibility: professional WCAG 2.1 AA work at NewEra IT, not public; GlucoTrace's own accessibility checks will be the public evidence. Checked 2026-10-24 |
+| 17 | B08 | React, TypeScript and accessible UI are skills you already have | Own GitHub | PASS |   React + TypeScript: github.com/yashika-lodh/Waypoint (Next.js, React 19, TypeScript). Accessibility: professional WCAG 2.1 AA work at NewEra IT is not public; public evidence is my InnovateUS form (innovate-us.vercel.app), which scored 93 in a Chrome Lighthouse accessibility audit on 2026-10-24, with two flagged contrast issues. Checked 2026-10-24
 
 ## Plan statements (future tense, no source needed; check they still say "will")
 

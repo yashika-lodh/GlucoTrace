@@ -30,4 +30,4 @@ All entries are from 2026-10-24. Times are approximate, from file save times, gi
 - **5:28 PM — First Canvas submission.** Submitted the zip with commit d385ef9.
 
 ## After first submission
-- **[time] — Resubmitted with small fixes.** Updated the beat_sheet.json notes (removed a leftover draft note; stated that the Kokoro voice was used), changed FACTCHECK.md's status to closed, and aligned FACTCHECK row 17 with the accessibility evidence in the brief. The film and narration are unchanged.
+- **06:03 PM — Resubmitted with small fixes.** Updated the beat_sheet.json notes (removed a leftover draft note; stated that the Kokoro voice was used), changed FACTCHECK.md's status to closed, and aligned FACTCHECK row 17 with the accessibility evidence in the brief. The film and narration are unchanged.
