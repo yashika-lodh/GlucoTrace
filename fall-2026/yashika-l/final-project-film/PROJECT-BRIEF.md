@@ -46,7 +46,9 @@ A reviewer could fairly conclude that I can build an AI feature that refuses to 
 
 ## 7. Why this project?
 A mix, leaning toward learning. I am interested in wearables and glucose, and I wanted a project where the AI's output can be checked against real numbers.
-- **Skills I already have:** React, TypeScript, state management, accessible UI. Evidence: my public repositories at github.com/yashika-lodh, including my Buffett Intelligence RAG project. My WCAG 2.1 AA work at NewEra IT is not public, so for accessibility I will point to this app's own audit results instead.
+- **Skills I already have:** React, TypeScript, state management, and accessible UI.
+  - React and TypeScript: my Waypoint project (github.com/yashika-lodh/Waypoint), a Next.js, React 19 and TypeScript agent console.
+  - Accessibility: my WCAG 2.1 AA work at NewEra IT is not public. Public evidence: my InnovateUS registration form (github.com/yashika-lodh/innovateUS, live at innovate-us.vercel.app) scored 93 in a Chrome Lighthouse accessibility audit I ran on 2026-10-24, with two flagged issues (text contrast, and links distinguished by color only).
 - **Skills that are new to me:** cleaning time-series health data, designing a verifier, building an evaluation set, and health-domain guardrails.
 - **What I don't know yet:** what share of Claude's claims will pass. I will find out from the first runnable piece and its log.
 
