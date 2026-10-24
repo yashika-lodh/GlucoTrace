@@ -1,16 +1,26 @@
 # FRICTIONAL — dated log
 
-Real entries only. Replace every [ ] with what actually happened and when.
+All entries are from 2026-10-24. Times are approximate, from file save times, git commits, and my chat history.
 
-## 2026-10-24
+## Project decisions
+- **~11:30 AM — Changed project.** Started with a WCAG accessibility-audit skill, but similar LLM auditors already exist. Switched to a glucose + wearable app, which has real numbers to check AI output against.
+- **~11:45 AM — No WHOOP or live data.** No public WHOOP dataset exists, and my own wearable data can't be used. Live Fitbit sync is out of scope because the Fitbit API is being replaced by the Google Health API, which needs a privacy review.
+- **~11:50 AM — Changed the pitch.** Found Oura + Dexcom Stelo already shows glucose beside sleep and activity. Changed the angle from "first to combine them" to "explanations you can check."
+- **By 12:30 PM — Changed dataset.** Switched from HUPA-UCM (type 1 only) to CGMacros, which includes healthy and prediabetic adults and logged meals. It has no sleep data, so I dropped sleep from the pitch.
+- **Before 1:30 PM — Cut scope.** Moved the "ask your data" agent from core to later.
 
-- **[time] — Project choice.** Started with a Claude Code WCAG accessibility-audit workflow. Searched and found existing LLM accessibility auditors, so the only differentiator would have been the evaluation. Switched to a glucose + wearable app because it is closer to my interests and has real numbers to check AI output against.
-- **[time] — WHOOP data.** Wanted WHOOP-style data. Found no public WHOOP dataset, and the WHOOP API only returns the account owner's own data, which this assignment does not allow. Dropped WHOOP data; the app works from public study data and later user exports.
-- **[time] — Live data.** Considered live Fitbit sync. The Fitbit Web API is being replaced by the Google Health API, which requires a privacy and security review. Moved live sync out of scope.
-- **[time] — Dataset.** First found HUPA-UCM (type 1 diabetes). Switched to CGMacros because it includes healthy and prediabetic adults and logged meals, which fits the target user. Noted that CGMacros has no sleep data, and narrowed the pitch to glucose, meals, heart rate, and activity.
-- **[time] — Competitors.** Found Oura + Dexcom Stelo already shows glucose beside sleep and activity. Changed the pitch from "first to combine them" to "explanations you can check, with a published error record."
-- **[time] — Scope cut.** Moved the "ask your data" agent from core to later, so the core is small enough to finish.
-- **[time] — Brutalist install started.** [what happened]
-- **[time] — [Error or problem].** Tried: [ ]. Result: [ ]. What I did instead: [ ].
-- **[time] — Narration.** Chose [my own voice / Kokoro af_bella] because [ ].
-- **[time] — Gates.** [Which gates passed, which failed, what I re-rendered.]
+## Setup problems
+- **~1:35 PM — Setup hung.** ./setup --install finished, but re-running ./setup seemed to hang. Stopped it and ran ./art smoke instead, which passed.
+- **Before 2:20 PM — Wrong folder and file name.** The reel folder ended up inside my repo, and the beat sheet was named beat-sheet.json. Moved the folder out and renamed it beat_sheet.json.
+- **[time] — No push access.** A TA said students can't push to the course repo yet. Submitting the zip on Canvas, with a matching copy in my own repo.
+
+## Toolkit conflicts
+- **~2:40 PM — Instructor bookends.** The ai-explainer skill requires a Claude chat-window opening and an outro with the instructor's handle, which the assignment forbids. Exempted three bookends. The outro's handle is hard-coded, so I left it out, and bookend_check.py reports one OUTRO failure.
+- **~2:50 PM — No matching scenes.** No library scene fit my beats, so all 11 were drawn as new Manim scenes. Fixed a font gap that made the title read "Gluco Trace."
+
+## Fact-check fixes
+- **3:27 PM — Two claims corrected.** Softened B01 from "you usually can't see" to "it's often hard to see," since I couldn't support the stronger claim. Renamed "Dexcom app" to "Stelo by Dexcom app" on screen. 15 of 17 claims passed as written.
+- **3:31 PM — Gates signed.** Signed Gate P and Gate F. Noted the CGMacros licence: CC BY-NC-SA 4.0, non-commercial only.
+
+## Render
+- **[time] — Render.** [What happened: gates passed or failed, what I re-rendered, final runtime.]
