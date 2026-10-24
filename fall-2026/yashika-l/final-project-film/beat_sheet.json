@@ -1,5 +1,5 @@
 {
-  "_note": "Draft by Yashika Lodh, 2026-10-24. Before rendering, match the field names to the toolkit's example beat sheets (examples/ai-explainer/claude-debunked/beat_sheet.json) and the chosen skill's SKILL.md. Narration is first person, as Yashika. No instructor persona, voice line, or credit.",
+  "_note": "Final beat sheet for the GlucoTrace pitch, 2026-10-24. Field names were matched to the toolkit's ai-explainer format before rendering. Narration is first person, as Yashika, with no instructor persona, voice line, or credit.",
   "metadata": {
     "title": "GlucoTrace — Final Project Pitch",
     "author": "Yashika Lodh",
@@ -8,7 +8,7 @@
     "builder": "show-tell if present in ./art --list, otherwise ai-explainer",
     "engine": "kokoro",
     "voice_kokoro": "af_bella",
-    "voice_note": "Preferred: my own recorded voice. If the pipeline needs Kokoro, use af_bella reading my first-person script, disclosed in README and SOURCES. Do not use the in-for-Bear line or the @NikBearBrown chip.",
+    "voice_note": "Narrated by the Kokoro af_bella voice reading my first-person script, disclosed in README and SOURCES. No in-for-Bear line or @NikBearBrown chip.",
     "visual_style": "One simple drawn picture per beat, minimal on-screen text, narration carries the idea.",
     "target_runtime": "about 3 minutes (2-4 allowed)",
     "palette": "claude",

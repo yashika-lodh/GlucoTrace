@@ -24,3 +24,10 @@ All entries are from 2026-10-24. Times are approximate, from file save times, gi
 
 ## Render
 - **~3:50–4:16 PM — Render.** Six ./art run attempts to pass all gates (scene-loading bug, safe-area fixes on B03/B04/B07/B09/B10, frame-fill fixes, B08 cue timing). ./art final passed GATE T with 0 fails. Final film: glucotrace-pitch.mp4, 2:26, 4K. bookend_check.py still reports the OUTRO failure logged above.
+
+## Submission
+- **~5:05 PM — Accessibility evidence.** Ran a Chrome Lighthouse accessibility audit on my InnovateUS form (innovate-us.vercel.app): score 93, with two flagged issues (text contrast, and links distinguished by color only). Added it to PROJECT-BRIEF.md as public evidence of an existing skill.
+- **5:28 PM — First Canvas submission.** Submitted the zip with commit d385ef9.
+
+## After first submission
+- **[time] — Resubmitted with small fixes.** Updated the beat_sheet.json notes (removed a leftover draft note; stated that the Kokoro voice was used), changed FACTCHECK.md's status to closed, and aligned FACTCHECK row 17 with the accessibility evidence in the brief. The film and narration are unchanged.
