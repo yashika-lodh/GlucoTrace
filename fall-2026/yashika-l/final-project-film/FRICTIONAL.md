@@ -12,7 +12,7 @@ All entries are from 2026-10-24. Times are approximate, from file save times, gi
 ## Setup problems
 - **~1:35 PM — Setup hung.** ./setup --install finished, but re-running ./setup seemed to hang. Stopped it and ran ./art smoke instead, which passed.
 - **Before 2:20 PM — Wrong folder and file name.** The reel folder ended up inside my repo, and the beat sheet was named beat-sheet.json. Moved the folder out and renamed it beat_sheet.json.
-- **[time] — No push access.** A TA said students can't push to the course repo yet. Submitting the zip on Canvas, with a matching copy in my own repo.
+- **Afternoon (exact time not recorded) — No push access.** A classmate shared a message from a TA saying students can't push to the course repo yet and should submit the zip on Canvas. Submitting the zip on Canvas, with a matching copy in my own repo.
 
 ## Toolkit conflicts
 - **~2:40 PM — Instructor bookends.** The ai-explainer skill requires a Claude chat-window opening and an outro with the instructor's handle, which the assignment forbids. Exempted three bookends. The outro's handle is hard-coded, so I left it out, and bookend_check.py reports one OUTRO failure.
@@ -23,4 +23,4 @@ All entries are from 2026-10-24. Times are approximate, from file save times, gi
 - **3:31 PM — Gates signed.** Signed Gate P and Gate F. Noted the CGMacros licence: CC BY-NC-SA 4.0, non-commercial only.
 
 ## Render
-- **[time] — Render.** [What happened: gates passed or failed, what I re-rendered, final runtime.]
+- **~3:50–4:16 PM — Render.** Six ./art run attempts to pass all gates (scene-loading bug, safe-area fixes on B03/B04/B07/B09/B10, frame-fill fixes, B08 cue timing). ./art final passed GATE T with 0 fails. Final film: glucotrace-pitch.mp4, 2:26, 4K. bookend_check.py still reports the OUTRO failure logged above.

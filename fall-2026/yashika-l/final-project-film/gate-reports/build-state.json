@@ -1,0 +1,31 @@
+{
+  "status": "ready",
+  "output": "/Users/yashikalodh/Documents/brutalist.art/renders/glucotrace-pitch.mp4",
+  "sha256": "f4e455c5ddecaaaa6a2c9ce866dd55e4a0761b7c472fc3c481a00c870163b691",
+  "duration_s": 146.33333333333334,
+  "input_sha256": {
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B00.mp4": "041b02576fb84c12991121667396b4ce5e7b757ca5bf2b3072b7debf204705b9",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B01.mp4": "74d57833570afcf45f5b4e09ca2566708a5fd23b843700ddaef18b1dc9d6121e",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B02.mp4": "eef3398e1a4dc4d838b4eb893939e838533c41cb0a9b96bd5def28dbb966587f",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B03.mp4": "c39cbcaef38a5600f9f0c9194bf1fc5af9daf8defb9dbf48104c77200cd637f5",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B04.mp4": "ea99370d0057a8143867f098bb309f772f30754af223230cf85588dc32d2091c",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B05.mp4": "93931821e1b1c89d3f5d685c6106d6556cf7edb28f7a6d73d0c7e1a0a04b81c9",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B06.mp4": "08a01d648a0eae123d70bd529581f492d2abdb9d0095a015366d72da424dda18",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B07.mp4": "5a55f2d2cfe198e99e18a5f8e54cc35461b8571bdc9d885597771d558d87ab50",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B08.mp4": "dd9b128ff515a2e2ce558e12a1ae1c096d9460bc75838393b6d72cf34d172f6e",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B09.mp4": "977bd8eae8770ded61ad5bd17481640befbf20985cff76aed8f3b4b59e076269",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/manim/B10.mp4": "2459b2964cb25c4c2b2f38558db2fa6d1bd403084c42ae5dd6f57153f3d1e90c",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B00.mp3": "4211ae8f5191763c1dae57ff4d642684184491cb835eda5b1d5398ec4876a171",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B01.mp3": "d133d4b83ceb6d508e95c8f746f35a50f21ceda8695de1bfa8bc49595e9b768b",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B02.mp3": "5f08f147ad7b263d603eb0afff66d6e7fb7fd2d767021272dca2e0f913da0336",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B03.mp3": "da70b4ead2270565dfcc7c5c1d11bb42a94b9353df920d344a4cfe41e20e9dd5",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B04.mp3": "745ea16abe1b86b2c80d13fd5c242e579193ab80c600536441e65b828ed156d2",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B05.mp3": "a5de57e1dbba2135fb05d3d2cf8cdd38a134d64356cae8b02f8965847a5705a4",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B06.mp3": "e31ba32647416774c2345ed807f3bf86eda59eb367c736e5fd952634a4c82fd1",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B07.mp3": "4f2aa1cb98ad7f9f6c9d957aa5d72b35a171a2526a218f609d5ec707b60cc2fc",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B08.mp3": "c5f7da857dff5aa4f14e177a176d9b61dd8373f915ce88fdf501c37b9e36cb65",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B09.mp3": "3faccdeff2b64f8ee81c4299c72c6233c69c3a8edcaa29b40afb7ae8d7e8d07d",
+    "/Users/yashikalodh/Documents/info7375-film/youtube/glucotrace-pitch/mp3/beat-B10.mp3": "018e95112403dbdb54d06c4545d7fa36f1b394f3227c58e58973f7665c101031"
+  },
+  "at": "2026-10-24T20:15:23.933123+00:00"
+}

@@ -1,105 +1,462 @@
 {
   "_note": "Draft by Yashika Lodh, 2026-10-24. Before rendering, match the field names to the toolkit's example beat sheets (examples/ai-explainer/claude-debunked/beat_sheet.json) and the chosen skill's SKILL.md. Narration is first person, as Yashika. No instructor persona, voice line, or credit.",
   "metadata": {
-    "title": "Checkable Glucose Insights — Final Project Pitch",
+    "title": "GlucoTrace — Final Project Pitch",
     "author": "Yashika Lodh",
     "course": "INFO7375 Fall 2026",
-    "slug": "checkable-glucose-pitch",
+    "slug": "glucotrace-pitch",
     "builder": "show-tell if present in ./art --list, otherwise ai-explainer",
     "engine": "kokoro",
     "voice_kokoro": "af_bella",
     "voice_note": "Preferred: my own recorded voice. If the pipeline needs Kokoro, use af_bella reading my first-person script, disclosed in README and SOURCES. Do not use the in-for-Bear line or the @NikBearBrown chip.",
     "visual_style": "One simple drawn picture per beat, minimal on-screen text, narration carries the idea.",
-    "target_runtime": "about 3 minutes (2-4 allowed)"
+    "target_runtime": "about 3 minutes (2-4 allowed)",
+    "palette": "claude",
+    "style_preset": "claude",
+    "ground": "#FAF9F5",
+    "typography": {
+      "serif": "Tiempos/EB Garamond",
+      "ui": "system sans",
+      "mono": "SF Mono"
+    },
+    "bookend_exempt": [
+      "cold-open",
+      "bvdt",
+      "bhtf"
+    ],
+    "build": {
+      "at": "2026-10-24T16:15:23",
+      "cut": "master",
+      "filled": 11,
+      "of": 11,
+      "slates": [],
+      "skin_warnings": [
+        "B00: palette=claude but the cold open is 'un-annotated' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "B10: palette=claude but the outro is 'un-annotated' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
   },
   "beats": [
     {
-      "id": "B00",
-      "title": "Title",
-      "narration": "Hi, I'm Yashika. This is a pitch for my final project: a glucose app whose AI explanations you can check. Nothing is built yet, so everything you'll see is a plan.",
-      "visual": "Title card. A hand-drawn glucose curve with a small checkmark on it.",
-      "on_screen_text": "Checkable Glucose Insights (working title) — a pitch",
-      "label": null
+      "beat_id": "B00",
+      "act": "Title",
+      "narration_text": "Hi, I'm Yashika. This is a pitch for my final project: a glucose app whose AI explanations you can check. Nothing is built yet, so everything you'll see is a plan.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B00_Title"
+        },
+        "visual_intent": "Title card. A hand-drawn glucose curve with a small checkmark on it.",
+        "on_screen_text": "GlucoTrace (working title) — a pitch",
+        "show": [
+          {
+            "at": "Hi, I'm Yashika.",
+            "event": "Title card."
+          },
+          {
+            "at": "a glucose app",
+            "event": "A hand-drawn glucose curve"
+          },
+          {
+            "at": "you can check",
+            "event": "with a small checkmark on it."
+          }
+        ]
+      },
+      "label": null,
+      "estimated_duration_s": 13,
+      "actual_duration_s": 11.31,
+      "audio_file": "mp3/beat-B00.mp3",
+      "render_duration_s": 11.333333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B00.mp4",
+        "filled_by": "manim:B00_Title",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B01",
-      "title": "The problem",
-      "narration": "If you wear a glucose monitor and a fitness tracker, your data lives in separate places. And when an app does explain it, you usually can't see what the explanation is based on.",
-      "visual": "Two phones drawn far apart, one with a glucose line, one with a heart. Between them, a speech bubble with a question mark.",
-      "on_screen_text": null,
-      "label": null
+      "beat_id": "B01",
+      "act": "The problem",
+      "narration_text": "If you wear a glucose monitor and a fitness tracker, your data lives in separate places. And when an app does explain it, it's often hard to see what the explanation is based on.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B01_Problem"
+        },
+        "visual_intent": "Two phones drawn far apart, one with a glucose line, one with a heart. Between them, a speech bubble with a question mark.",
+        "on_screen_text": null,
+        "show": [
+          {
+            "at": "If you wear a glucose monitor",
+            "event": "Two phones drawn far apart, one with a glucose line,"
+          },
+          {
+            "at": "a fitness tracker",
+            "event": "one with a heart."
+          },
+          {
+            "at": "it's often hard to see what the explanation is based on",
+            "event": "Between them, a speech bubble with a question mark."
+          }
+        ]
+      },
+      "label": null,
+      "estimated_duration_s": 14,
+      "actual_duration_s": 11.05,
+      "audio_file": "mp3/beat-B01.mp3",
+      "render_duration_s": 11.083333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim:B01_Problem",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B02",
-      "title": "What already exists",
-      "narration": "I looked at Oura with Dexcom's Stelo, which shows glucose next to sleep and activity, and Dexcom's own app, which has AI insights. Both are tied to specific hardware, and from their public pages I couldn't find a published record of how often their AI is wrong.",
-      "visual": "Two closed boxes, each with a small padlock and a device icon inside.",
-      "on_screen_text": "Oura + Stelo · Dexcom app",
-      "label": null
+      "beat_id": "B02",
+      "act": "What already exists",
+      "narration_text": "I looked at Oura with Dexcom's Stelo, which shows glucose next to sleep and activity, and Dexcom's own app, which has AI insights. Both are tied to specific hardware, and from their public pages I couldn't find a published record of how often their AI is wrong.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B02_Existing"
+        },
+        "visual_intent": "Two closed boxes, each with a small padlock and a device icon inside.",
+        "on_screen_text": "Oura + Stelo · Stelo by Dexcom app",
+        "show": [
+          {
+            "at": "Oura with Dexcom's Stelo",
+            "event": "Two closed boxes,"
+          },
+          {
+            "at": "tied to specific hardware",
+            "event": "each with a small padlock and a device icon inside."
+          }
+        ]
+      },
+      "label": null,
+      "estimated_duration_s": 19,
+      "actual_duration_s": 17.05,
+      "audio_file": "mp3/beat-B02.mp3",
+      "render_duration_s": 17.083333333333332,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B02.mp4",
+        "filled_by": "manim:B02_Existing",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B03",
-      "title": "The idea",
-      "narration": "My app will put glucose, meals, heart rate and activity on one timeline. And every sentence the AI writes will link to the exact readings behind it.",
-      "visual": "Sketch of one timeline: a glucose line on top, meal markers, heart-rate band below. A sentence with a thin line pointing to two dots on the curve.",
-      "on_screen_text": "CONSTRUCTED — sketch, not built",
-      "label": "constructed"
+      "beat_id": "B03",
+      "act": "The idea",
+      "narration_text": "My app will put glucose, meals, heart rate and activity on one timeline. And every sentence the AI writes will link to the exact readings behind it.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B03_Idea"
+        },
+        "visual_intent": "Sketch of one timeline: a glucose line on top, meal markers, heart-rate band below. A sentence with a thin line pointing to two dots on the curve.",
+        "on_screen_text": "CONSTRUCTED — sketch, not built",
+        "show": [
+          {
+            "at": "My app will put glucose",
+            "event": "Sketch of one timeline: a glucose line on top,"
+          },
+          {
+            "at": "meals",
+            "event": "meal markers,"
+          },
+          {
+            "at": "heart rate",
+            "event": "heart-rate band below."
+          },
+          {
+            "at": "every sentence the AI writes",
+            "event": "A sentence with a thin line"
+          },
+          {
+            "at": "the exact readings behind it",
+            "event": "pointing to two dots on the curve."
+          }
+        ]
+      },
+      "label": "constructed",
+      "estimated_duration_s": 11,
+      "actual_duration_s": 9.64,
+      "audio_file": "mp3/beat-B03.mp3",
+      "render_duration_s": 9.666666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim:B03_Idea",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B04",
-      "title": "The data",
-      "narration": "The demo will use CGMacros, a public research dataset of forty-five adults: healthy, prediabetic, and type two, over about ten days, with their meals logged. It's recorded data, not live, so anyone can check it.",
-      "visual": "A drawn spreadsheet with an arrow into the timeline sketch.",
-      "on_screen_text": "Public dataset: CGMacros (PhysioNet)",
-      "label": null
+      "beat_id": "B04",
+      "act": "The data",
+      "narration_text": "The demo will use CGMacros, a public research dataset of forty-five adults: healthy, prediabetic, and type two, over about ten days, with their meals logged. It's recorded data, not live, so anyone can check it.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B04_Data"
+        },
+        "visual_intent": "A drawn spreadsheet with an arrow into the timeline sketch.",
+        "on_screen_text": "Public dataset: CGMacros (PhysioNet)",
+        "show": [
+          {
+            "at": "The demo will use CGMacros",
+            "event": "A drawn spreadsheet"
+          },
+          {
+            "at": "It's recorded data, not live",
+            "event": "with an arrow into the timeline sketch."
+          }
+        ]
+      },
+      "label": null,
+      "estimated_duration_s": 14,
+      "actual_duration_s": 14.83,
+      "audio_file": "mp3/beat-B04.mp3",
+      "render_duration_s": 14.833333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim:B04_Data",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B05",
-      "title": "Code computes, Claude explains",
-      "narration": "Code will compute the numbers first: how far glucose rose after a meal, when it peaked, and how long it took to settle. Claude will only explain those numbers, and it has to cite each one.",
-      "visual": "Three boxes in a row with arrows: Code computes → Claude explains → Code checks.",
-      "on_screen_text": "Code computes → Claude explains → Code checks",
-      "label": null
+      "beat_id": "B05",
+      "act": "Code computes, Claude explains",
+      "narration_text": "Code will compute the numbers first: how far glucose rose after a meal, when it peaked, and how long it took to settle. Claude will only explain those numbers, and it has to cite each one.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B05_Pipeline"
+        },
+        "visual_intent": "Three boxes in a row with arrows: Code computes → Claude explains → Code checks.",
+        "on_screen_text": "Code computes → Claude explains → Code checks",
+        "show": [
+          {
+            "at": "Code will compute the numbers first",
+            "event": "Three boxes in a row with arrows: Code computes"
+          },
+          {
+            "at": "Claude will only explain those numbers",
+            "event": "Claude explains"
+          },
+          {
+            "at": "it has to cite each one",
+            "event": "Code checks"
+          }
+        ]
+      },
+      "label": null,
+      "estimated_duration_s": 15,
+      "actual_duration_s": 11.46,
+      "audio_file": "mp3/beat-B05.mp3",
+      "render_duration_s": 11.5,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim:B05_Pipeline",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B06",
-      "title": "Verification",
-      "narration": "Then code will check every claim. A wrong number fails. A missing citation fails. Medical or cause-and-effect language, like 'you should', gets blocked. Anything flagged is never shown as fact.",
-      "visual": "Three drawn claim cards: one with a check, one with an X, one with a stop sign.",
-      "on_screen_text": "verified · failed · blocked",
-      "label": null
+      "beat_id": "B06",
+      "act": "Verification",
+      "narration_text": "Then code will check every claim. A wrong number fails. A missing citation fails. Medical or cause-and-effect language, like 'you should', gets blocked. Anything flagged is never shown as fact.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B06_Verification"
+        },
+        "visual_intent": "Three drawn claim cards: one with a check, one with an X, one with a stop sign.",
+        "on_screen_text": "verified · failed · blocked",
+        "show": [
+          {
+            "at": "Then code will check every claim.",
+            "event": "Three drawn claim cards: one with a check,"
+          },
+          {
+            "at": "A wrong number fails.",
+            "event": "one with an X,"
+          },
+          {
+            "at": "gets blocked",
+            "event": "one with a stop sign."
+          }
+        ]
+      },
+      "label": null,
+      "estimated_duration_s": 12,
+      "actual_duration_s": 12.37,
+      "audio_file": "mp3/beat-B06.mp3",
+      "render_duration_s": 12.375,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim:B06_Verification",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B07",
-      "title": "Who opens it",
-      "narration": "A hiring manager will open the link, pick a participant and a day, and click a meal explanation to see the readings light up. Then they'll open the evaluation page to see how often Claude was right, and real examples of when it wasn't.",
-      "visual": "Sketch of a meal card next to a chart with two highlighted points, and a small tab labelled Evaluation.",
-      "on_screen_text": "CONSTRUCTED — mock-up, not built",
-      "label": "constructed"
+      "beat_id": "B07",
+      "act": "Who opens it",
+      "narration_text": "A hiring manager will open the link, pick a participant and a day, and click a meal explanation to see the readings light up. Then they'll open the evaluation page to see how often Claude was right, and real examples of when it wasn't.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B07_WhoOpens"
+        },
+        "visual_intent": "Sketch of a meal card next to a chart with two highlighted points, and a small tab labelled Evaluation.",
+        "on_screen_text": "CONSTRUCTED — mock-up, not built",
+        "show": [
+          {
+            "at": "A hiring manager will open the link",
+            "event": "Sketch of a meal card next to a chart"
+          },
+          {
+            "at": "see the readings light up",
+            "event": "with two highlighted points,"
+          },
+          {
+            "at": "open the evaluation page",
+            "event": "and a small tab labelled Evaluation."
+          }
+        ]
+      },
+      "label": "constructed",
+      "estimated_duration_s": 18,
+      "actual_duration_s": 14.46,
+      "audio_file": "mp3/beat-B07.mp3",
+      "render_duration_s": 14.5,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B07.mp4",
+        "filled_by": "manim:B07_WhoOpens",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B08",
-      "title": "What it proves, and why this project",
-      "narration": "It's meant to show I can build AI features that refuse to show unchecked claims, and measure how well they work. React, TypeScript and accessible UI are skills I already have. Verification, evaluation and health data are new for me.",
-      "visual": "Two columns drawn on paper: 'Have' and 'Learning', with a few icons in each.",
-      "on_screen_text": "Have · Learning",
-      "label": null
+      "beat_id": "B08",
+      "act": "What it proves, and why this project",
+      "narration_text": "It's meant to show I can build AI features that refuse to show unchecked claims, and measure how well they work. React, TypeScript and accessible UI are skills I already have. Verification, evaluation and health data are new for me.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B08_HaveLearning"
+        },
+        "visual_intent": "Two columns drawn on paper: 'Have' and 'Learning', with a few icons in each.",
+        "on_screen_text": "Have · Learning",
+        "show": [
+          {
+            "at": "It's meant to show",
+            "event": "Two columns drawn on paper: 'Have'"
+          },
+          {
+            "at": "Verification, evaluation and health data",
+            "event": "and 'Learning', with a few icons in each."
+          }
+        ]
+      },
+      "label": null,
+      "estimated_duration_s": 16,
+      "actual_duration_s": 15.62,
+      "audio_file": "mp3/beat-B08.mp3",
+      "render_duration_s": 15.625,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B08.mp4",
+        "filled_by": "manim:B08_HaveLearning",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B09",
-      "title": "Out of scope and the risk",
-      "narration": "It won't diagnose, predict glucose, or give medical advice. The biggest risk is that a sentence can have the right numbers and still mislead. So anything outside a small set of checkable claim types will be marked unverified and reviewed by hand.",
-      "visual": "A fence. Outside it: a stethoscope, a crystal ball, a prescription pad, each crossed out.",
-      "on_screen_text": "No diagnosis · No predictions · No medical advice",
-      "label": null
+      "beat_id": "B09",
+      "act": "Out of scope and the risk",
+      "narration_text": "It won't diagnose, predict glucose, or give medical advice. The biggest risk is that a sentence can have the right numbers and still mislead. So anything outside a small set of checkable claim types will be marked unverified and reviewed by hand.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B09_OutOfScope"
+        },
+        "visual_intent": "A fence. Outside it: a stethoscope, a crystal ball, a prescription pad, each crossed out.",
+        "on_screen_text": "No diagnosis · No predictions · No medical advice",
+        "show": [
+          {
+            "at": "It won't diagnose",
+            "event": "A fence. Outside it: a stethoscope, … crossed out."
+          },
+          {
+            "at": "predict glucose",
+            "event": "a crystal ball, … crossed out."
+          },
+          {
+            "at": "give medical advice",
+            "event": "a prescription pad, … crossed out."
+          }
+        ]
+      },
+      "label": null,
+      "estimated_duration_s": 17,
+      "actual_duration_s": 15.94,
+      "audio_file": "mp3/beat-B09.mp3",
+      "render_duration_s": 15.958333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B09.mp4",
+        "filled_by": "manim:B09_OutOfScope",
+        "at": "2026-10-24T16:15:23"
+      }
     },
     {
-      "id": "B10",
-      "title": "First thing that runs",
-      "narration": "The first thing that will run is one participant, one day, one meal: explained, checked, and written as one row in the evaluation log. That row is how you'll know it ran. Thanks for watching.",
-      "visual": "A single drawn table row with columns claim, result, date, and a checkmark.",
-      "on_screen_text": "CONSTRUCTED — planned log row",
-      "label": "constructed"
+      "beat_id": "B10",
+      "act": "First thing that runs",
+      "narration_text": "The first thing that will run is one participant, one day, one meal: explained, checked, and written as one row in the evaluation log. That row is how you'll know it ran. Thanks for watching.",
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "manim",
+        "manim": {
+          "scene_class": "B10_FirstRun"
+        },
+        "visual_intent": "A single drawn table row with columns claim, result, date, and a checkmark.",
+        "on_screen_text": "CONSTRUCTED — planned log row",
+        "show": [
+          {
+            "at": "one participant, one day, one meal",
+            "event": "A single drawn table row with columns claim, result, date,"
+          },
+          {
+            "at": "That row is how you'll know it ran.",
+            "event": "and a checkmark."
+          }
+        ]
+      },
+      "label": "constructed",
+      "estimated_duration_s": 14,
+      "actual_duration_s": 12.37,
+      "audio_file": "mp3/beat-B10.mp3",
+      "render_duration_s": 12.375,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B10.mp4",
+        "filled_by": "manim:B10_FirstRun",
+        "at": "2026-10-24T16:15:23"
+      }
     }
   ]
 }

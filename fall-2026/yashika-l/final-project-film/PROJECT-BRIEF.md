@@ -1,4 +1,4 @@
-# PROJECT-BRIEF — Checkable Glucose Insights (working title)
+# PROJECT-BRIEF — GlucoTrace (working title)
 
 **Yashika Lodh** · INFO7375, Fall 2026 · Written 2026-10-24
 **Target role:** early-career frontend / full-stack engineer (React + TypeScript), on teams building AI product features.
